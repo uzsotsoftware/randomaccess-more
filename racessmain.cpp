@@ -18,7 +18,7 @@ using namespace std;
 int Addrecs();
 int Viewrecs();
 void Viewall();
-//int recordCounter;
+int recordCounter();
 
 class Students {
     char regNum[9];
@@ -87,7 +87,7 @@ void  Viewall() {
     }
 
 
-int recordCounter(string Filename){
+int recordCounter(){
     int counter = 0;
     Students obj;
     ifstream file("students.dat", ios::binary);
